@@ -17,7 +17,8 @@ device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cp
 print(f'Using {device} for inference')
 import matplotlib.pyplot as plt
 
-discord_token = 'MTAzODQwMTMyNjMwMTgzOTQxMA.GuAcg3.bue86jdnjWVuDtHQ8XMFFDX8ztTEywhGFoztcE'
+f = open('discord_bot_token.txt','r')
+discord_token = f.read()
 
 # discord Client class를 생성합니다.
 intents = discord.Intents.all()
