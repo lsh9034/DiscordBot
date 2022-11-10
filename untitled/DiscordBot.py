@@ -83,3 +83,5 @@ async def helloworld(interaction: discord.Interaction, image: discord.Attachment
 
 # 위에서 설정한 client class를 token으로 인증하여 실행합니다.
 client.run(discord_token)
+
+#Git test
